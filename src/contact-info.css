@@ -1,0 +1,81 @@
+.contactTitle { 
+    grid-area: contactTitle; 
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #7e7e7e;
+    font-weight: bold;
+}
+
+.symbol {
+    grid-area: symbol;
+
+    font-size: 15px;
+    box-shadow: 0 0 1px rgba(0,0,0,.125),0 1px 3px rgba(0,0,0,.2);
+    background: #ffc107 linear-gradient(180deg,#ffca2c,#ffc107);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px 10px 15px;
+
+}
+
+.name { 
+    grid-area: name; 
+    color: #504e4e;
+}
+
+.email { 
+    grid-area: email; 
+    align-self: flex-end;
+    color: #7e7e7e;
+}
+
+.phone { 
+    grid-area: phone; 
+    align-self: flex-end;
+    padding: 10px 10px 10px 10px ;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+
+
+.personal { 
+    grid-area: personal;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px ;
+
+    grid-template-areas:
+    'name'
+    'email' ;
+ }
+
+.contactInfo { 
+    grid-area: contactInfo;
+    font-size: 14px;
+
+    grid-template-areas:
+    'symbol personal phone'
+    'symbol personal phone' ;
+ }
+
+
+ @media (min-width: 1200px) {
+
+    .contactSupport { 
+        display: grid;
+        grid-template-areas:
+        'contactTitle contactTitle contactTitle'
+        'symbol personal phone';
+
+    }
+
+}
+

@@ -1,0 +1,33 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHardHat } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
+
+import './account-overview.css';
+
+
+type Props = {
+  title: JSX.Element,
+  contact: JSX.Element,
+  salesStats: JSX.Element
+};
+
+export class Wrapper extends React.Component<Props>  {
+    render() {
+
+        return (
+            <div>
+
+                {title}
+                {contact}
+                {salesStats}
+
+            </div>
+        );
+    
+    }
+
+}
+
+
+export default Wrapper;

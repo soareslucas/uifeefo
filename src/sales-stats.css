@@ -1,0 +1,91 @@
+
+.salesTitle { grid-area: salesTitle; }
+
+.numbers { 
+  grid-area: numbers;
+}
+
+.numbers p{
+
+  color: #7e7e7e;
+
+}
+
+
+@media (min-width: 1200px) {
+
+  .sales { 
+    grid-area: sales; 
+    grid-template-columns: 1fr 2fr;
+
+    display: grid;
+    grid-template-areas:
+    'salesTitle salesTitle'
+    'numbers numbers';
+
+  }
+}
+
+
+.bold{
+
+  font-family: "Roboto Bold", sans-serif;
+  font-weight: bold;
+
+}
+
+.info { 
+  grid-area: info; 
+  text-align: right;
+}
+.upload { 
+    grid-area: upload;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+
+}
+.line { 
+    grid-area: line;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+
+}
+
+
+@media (min-width: 1200px) {
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas:
+      'sales sales info info'
+      'upload upload line line';
+    grid-auto-columns: 25%;
+    grid-auto-rows: 55%;
+    background-color: #ffffff;
+  }
+
+}
+
+.grid-container > div {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 10px ;
+  font-size: 14px;
+}
+
+
+span {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #45925f;
+}
+
+
+.medium {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #7e7e7e;
+
+}
+

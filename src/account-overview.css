@@ -1,0 +1,56 @@
+.AccountOverview {
+
+  width: 50%;
+  background-color: #ffffff;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card {
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.titleOverView {   
+  grid-area: titleOverView;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: thin;
+  color: #504e4e;
+
+
+}
+.contact {
+  grid-area: contact;
+  padding: 0px 0px 0px 0px ;
+
+}
+.salesStats { 
+    grid-area: salesStats;
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas:
+    'titleOverView titleOverView contact contact'
+    'salesStats salesStats salesStats salesStats';
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    background-color: #f4f4f4;
+  }
+}
+
+.wrapper > div {
+  background-color: #f4f4f4;
+  padding: 10px 10px 10px 10px;
+  font-size: 25px;
+}
