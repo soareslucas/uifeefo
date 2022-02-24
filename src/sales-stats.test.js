@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import SalesStats from './sales-stats';
 
-test('renders learn react link', () => {
+test('Check use of the component', () => {
 
     const accountOverviewStub = {
     supportContact: {
@@ -21,6 +21,4 @@ test('renders learn react link', () => {
   const element = screen.getByText("3 uploads");
   expect(element).toBeInTheDocument();
 });
-
-
 

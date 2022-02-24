@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import AccountOverview from './account-overview';
 
-test('renders learn react link', () => {
+test('Check use of the component', () => {
 
     const accountOverviewStub = {
     supportContact: {
